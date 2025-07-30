@@ -1,0 +1,91 @@
+header a{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Arial", sans-serif;
+    background-color: rgba(9, 6, 47, 0.86);
+}
+
+header {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+main h1.name {
+    font-size: 3.0rem;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: "Times New Roman", Times, serif;
+}
+
+main p {
+    text-align: center;
+    color:rgb(3, 208, 211);
+    font-size: 1.2rem;
+}
+
+main p a {
+    text-decoration: none;
+    color: rgb(2, 152, 155);
+    font-weight: bold;
+}
+
+div.logo {
+    padding-left: 1rem;
+}
+
+nav.navbar {
+    padding-right: 1rem;
+}
+
+nav.navbar a:hover {
+    color:rgb(2, 152, 155);
+}
+
+main p a:hover {
+    color: rgb(132, 246, 246);
+}
+
+div.logo a:hover {
+    color: rgb(132, 246, 246);
+}
+
+div.socialsLinks {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialsLinks img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+    object-fit: contain;;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 4rem;
+}
+
