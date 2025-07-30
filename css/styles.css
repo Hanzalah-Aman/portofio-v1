@@ -3,6 +3,8 @@ header a{
     color:aliceblue;
     font-weight: bold;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
 * {
@@ -11,22 +13,39 @@ header a{
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/*Make the padding for the introduction, it being coning the 50% of the horizontal side */
+
+.introParagraph {
+    padding: 0 2rem;
+    max-width: 500px;
+    margin: auto;
+}
+
 body {
-    font-family:"Arial", sans-serif;
+    font-family:"Consolas", monospace;
     background-color: rgba(9, 6, 47, 0.86);
+    line-height: 1.6em;
 }
 
 header {
     padding-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    margin: auto;
 }
 
 header ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
 main h1.name {
@@ -35,40 +54,48 @@ main h1.name {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 1.5rem;
 }
 
-main p {
+.introParagraph, .aboutParagraph {
     text-align: center;
     color:rgb(3, 208, 211);
     font-size: 1.2rem;
+    font-family: 'Consolas', monospace;
+    max-width: 500px;
 }
 
-main p a {
+.introParagraph a {
     text-decoration: none;
     color: rgb(2, 152, 155);
     font-weight: bold;
 }
 
-div.logo {
+/* div.logo {
     padding-left: 1rem;
-}
+} */
 
 nav.navbar {
     padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
 }
 
 nav.navbar a:hover {
     color:rgb(2, 152, 155);
 }
 
-main p a:hover {
+.introParagraph a:hover {
     color: rgb(132, 246, 246);
 }
 
-div.logo a:hover {
+/* div.logo a:hover {
     color: rgb(132, 246, 246);
-}
+} */
 
 div.socialsLinks {
     display: flex;
@@ -78,14 +105,35 @@ div.socialsLinks {
 }
 
 .socialsLinks img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     transition: transform 0.3s ease;
-    object-fit: contain;;
+    object-fit: cover;
     cursor: pointer;
 }
 
 main {
     margin-top: 4rem;
+}
+
+#aboutSection {
+    text-align: center;
+}
+
+.aboutParagraph {
+    text-align: left;
+    margin: auto;
+}
+
+main section {
+    min-height: 100vh;
+}
+
+.aboutHeading{
+    color:aliceblue;
+}
+
+.subjectsList{
+    text-decoration:wavy underline;
 }
 
